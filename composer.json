@@ -1,0 +1,29 @@
+{
+    "name": "mwpd/basic-scaffold",
+    "description": "Basic plugin boilerplate code for quick scaffolding.",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alain Schlesser",
+            "email": "alain.schlesser@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^6",
+        "phpstan/phpstan": "^0.11.5",
+        "vimeo/psalm": "^3.2",
+        "giacocorsiglia/wordpress-stubs": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "MWPD\\BasicScaffold\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MWPD\\BasicScaffold\\Tests\\": "tests/php/"
+        }
+    }
+}
